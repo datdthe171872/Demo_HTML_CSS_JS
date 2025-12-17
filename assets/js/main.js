@@ -1,18 +1,18 @@
-import initTableData from "./component/tableData.js";
+import initCandidatePage from "./page/candidatePage.js";
 import { shortenSidebar } from "./component/sidebar.js";
 import { previewImg } from "./utils/commonFns.js";
 import {
-  handleSave,
-  handleCancel,
-  handleOpen,
   clickEditIcon,
-} from "./component/popupCandidate.js";
+  handleOpen,
+  handleSaveCandidate,
+  handleCancel,
+} from "./page/candidatePage.js";
 import { handleDropdownSelect } from "./component/selectdropdown.js";
 document.addEventListener("DOMContentLoaded", () => {
-  initTableData();
+  initCandidatePage();
   shortenSidebar();
   previewImg();
-  handleSave();
+  handleSaveCandidate();
   handleCancel();
   handleOpen();
   clickEditIcon();

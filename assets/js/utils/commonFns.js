@@ -48,6 +48,7 @@ export function generateAvatar(fullName) {
     </div>
   `;
 }
+//hàm xem trc image khi upload
 export function previewImg() {
   const input = document.getElementById("uploadImage");
   const preview = document.querySelector(".preview-img");
@@ -65,28 +66,47 @@ export function previewImg() {
     reader.readAsDataURL(file);
   });
 }
+//hàm get value input theo id
 export function getValue(id) {
   return document.getElementById(id)?.value?.trim() || "";
 }
+//hàm set value input theo id
 export function setValue(id, value) {
   const el = document.getElementById(id);
   if (el && value !== undefined && value !== "_ _" && value !== "--") {
     el.value = value;
     el.dispatchEvent(new Event("change")); // để select ăn màu
-    console.log("id=", id, "value=", value);
   }
 }
-
+// hàm phân trang
+export function paginate(list, page = 1, size = 10) {
+  const start = (page - 1) * size;
+  return list.slice(start, start + size);
+}
+// hàm tính tổng trang
+export function getTotalPages(totalItems, size = 10) {
+  return Math.ceil(totalItems / size);
+}
+//bind kiểu ngày hôm nay vào input type date
+export function bindDateNow(id) {
+  const today = new Date().toISOString().split("T")[0];
+  document.getElementById(id).value = today;
+}
 //mở modal
 export function openModal(id) {
   document.getElementById(id).style.opacity = 1;
   document.getElementById(id).style.pointerEvents = "auto";
 }
+// đóng modal
 export function closeModal(id) {
   document.getElementById(id).style.opacity = 0;
   document.getElementById(id).style.pointerEvents = "none";
 }
-export function bindDateNow(id) {
-  const today = new Date().toISOString().split("T")[0];
-  document.getElementById(id).value = today;
+//resetform
+export function resetForm(title) {
+  document.querySelector(".modal-title").innerText = title;
+  Array.from(document.getElementsByClassName("modal-input")).forEach(
+    (el) => (el.value = "")
+  );
+  console.log("đã vào");
 }

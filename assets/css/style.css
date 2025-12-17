@@ -134,8 +134,9 @@
     position: sticky;
     left: 0;
     z-index: 1;
-    background-color: inherit;
+    background-color: white;
 }
+
 .field-items{
     min-width: 200px;
     height: 50px;
@@ -162,6 +163,9 @@
 .data-row:hover{
     background-color: #d6e6fe;
 }
+.data-row:hover .field-items-first{
+    background-color: inherit;
+}
 
 .action-col {
   position: sticky;
@@ -171,7 +175,7 @@
   min-width: 60px;
   background-color: inherit;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 /* Hover dòng → hiện icon */
 .data-row:hover .edit-icon , .data-row:hover .delete-icon{

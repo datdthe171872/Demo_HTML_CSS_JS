@@ -35,15 +35,15 @@ export function render() {
         `
                                 <tr class="data-row" data-id="${c.id}">
                                     <td class="field-items-first text-center"><input type="checkbox" /></td>
+                                      <td class="field-items display-flex align-items-center">
+                                          ${generateAvatar(c.fullName)}
+                                          ${c.fullName}
+                                      </td>
+                                      <td class="field-items">${c.email}</td>
                                     <td class="field-items ">${
                                       c.phoneNumber
                                     }</td>
                                     <td class="field-items">${c.source}</td>
-                                    <td class="field-items display-flex align-items-center">
-                                        ${generateAvatar(c.fullName)}
-                                        ${c.fullName}
-                                    </td>
-                                    <td class="field-items">${c.email}</td>
                                     <td class="field-items">${c.campaign}</td>
                                     <td class="field-items">${c.position}</td>
                                     <td class="field-items">${

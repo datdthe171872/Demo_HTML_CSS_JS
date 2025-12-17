@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo 01</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/commons.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/image.css">
+    <link rel="stylesheet" href="assets/css/input.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <title>Recuiement</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container display-flex flex-direction-column">
+        <!--Header-->
+        <div class="header display-flex justify-content-space-between align-items-center">
+            <!--Header-left-->
+            <div class="header-left display-flex align-items-center">
+                <div class="icon icon-switchapp"></div>
+                <div class="logo display-flex justify-content-center">
+                    <div class="bg-logo"></div>
+                    <div class="icon-logo"></div>
+                </div>
+                <div class="header-title">Tuyển dụng</div>
+                <div class="header-search display-flex align-items-center">
+                    <div class="icon icon-searchheader"></div>
+                    <input class="input-default" type="text" placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài">
+                </div>
+            </div>
+            <!--Header-right-->
+            <div class="header-right display-flex justify-content-end align-items-center">
+                <div class="header-right-item display-flex align-items-center">
+                    <div class="icon icon-website"></div>
+                    <div class="header-r-item-content">Website tuyển dụng</div>
+                </div>
+                <div class="header-right-item icon icon-new-feature">
+                </div>
+                <div class="header-right-item icon-shopping-cart">
+                    <span class="badge">3</span>
+                </div>
+                <div class="header-right-item icon-user-invite"></div>
+                <div class="header-right-item icon-default icon-message"></div>
+                <div class="header-right-item icon-default icon-notification">
+                    <span class="badge">3</span>
+                </div>
+                <div class="header-right-item icon icon-header-other"></div>
+                <div class="header-right-item icon-default icon-knowledge"></div>
+                <img class="avatar" src="assets/images/avatar.jpg" alt="User Avatar" />
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content flex1 display-flex">
+            <!--sidebar-->
+            <div class="sidebar display-flex flex-direction-column">
+                <div class="sidebar-list">
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-recuiment">
+                        </div>
+                        <div class="sidebar-content display-flex align-items-center">Tin tuyển dụng</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items active display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-candidate">
+                        </div>
+                        <div class="sidebar-content">Ứng viên</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-schedule">
+                        </div>
+                        <div class="sidebar-content">Lịch</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-repository">
+                        </div>
+                        <div class="sidebar-content">Kho tiềm năng</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-strategy">
+                        </div>
+                        <div class="sidebar-content display-flex">Chiến dịch tuyển dụng</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-todo">
+                        </div>
+                        <div class="sidebar-content display-flex">Công việc</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-aimarketing">
+                        </div>
+                        <div class="sidebar-content">AiMarketing</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-chatbox">
+                        </div>
+                        <div class="sidebar-content">Trao đổi với ứng viên</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-report">
+                        </div>
+                        <div class="sidebar-content">Báo cáo </div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-setting">
+                        </div>
+                        <div class="sidebar-content">Thiết lập</div>
+                    </div>
+                    <!-- sidebaritems -->
+                    <div class="sidebar-items display-flex align-items-center">
+                        <div class=" icon sidebar-icon icon-sb-other">
+                        </div>
+                        <div class="sidebar-content">Khác</div>
+                    </div>
+                </div>
+                <!-- button shorten -->
+                <button class="button sb-shortenbtn display-flex justify-content-start align-items-center">
+                    <div class="icon sidebar-icon icon-sb-arrowleft"></div>
+                    Thu gọn
+                </button>
+            </div>
+            <!--main content-->
+            <div class="main-content flex1 display-flex flex-direction-column">
+                <!-- content header -->
+                <div class="main-content-header display-flex align-items-center justify-content-space-between">
+                    <!-- content title -->
+                    <div class="header-title">Ứng viên</div>
+                    <!-- button -->
+                    <div class="content-header-btn-group display-flex align-items-center">
+                        <a id="openbtn"
+                            class=" button button-left display-flex align-items-center text-decoration-none">
+                            <div class="icon icon-add-candidate"></div>
+                            Thêm ứng viên
+                        </a>
+                        <button class="button button-right display-flex justify-content-center align-items-center">
+                            <div class="icon icon-more-arrow"></div>
+                        </button>
+                        <div class="select-dropdown">
+                            <div class="select-item">Tùy chọn 1</div>
+                            <div class="select-item">Tùy chọn 2</div>
+                            <div class="select-item">Tùy chọn 3</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content body -->
+                <div class="content-body flex1 display-flex flex-direction-column">
+                    <!-- body header -->
+                    <div class="content-body-header display-flex justify-content-space-between align-items-center">
+                        <!-- search candidate -->
+                        <div class="search-candidate display-flex align-items-center">
+                            <div class="icon-default icon-search-candidate"></div>
+                            <input class="input-default " type="text" placeholder="Tìm kiếm nhanh theo Họ tên và SĐT" id="search-input">
+                        </div>
+                        <!-- btn group -->
+                        <div class="content-body-btn-group display-flex align-items-center">
+                            <button
+                                class="button btn-group-item display-flex justify-content-center align-items-center">
+                                <div class="icon icon-filter"></div>
+                            </button>
+                            <button
+                                class="button btn-group-item display-flex justify-content-center align-items-center">
+                                <div class="icon icon-export"></div>
+                            </button>
+                            <button
+                                class="button btn-group-item display-flex justify-content-center align-items-center">
+                                <div class="icon icon-quick-action"></div>
+                            </button>
+                            <button
+                                class="button btn-group-item display-flex justify-content-center align-items-center">
+                                <div class="icon icon-setting"></div>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- body table -->
+                    <div class="content-body-table flex1 display-flex overflow-x-auto overflow-y-auto">
+                        <table class="data-table overflow-x-auto overflow-y-auto">
+                            <!-- table head -->
+                            <thead class="table-head">
+                                <tr>
+                                    <td class="field-items corner-table text-center"><input type="checkbox" /></td>
+                                    <td class="field-items text-bold head-row">Số điện thoại</td>
+                                    <td class="field-items text-bold head-row">Nguồn ứng viên</td>
+                                    <td class="field-items text-bold head-row">Họ và tên</td>
+                                    <td class="field-items text-bold head-row">Email</td>
+                                    <td class="field-items text-bold head-row">Chiến dịch tuyển dụng</td>
+                                    <td class="field-items text-bold head-row">Vị trí tuyển dụng</td>
+                                    <td class="field-items text-bold head-row">Tin tuyển dụng</td>
+                                    <td class="field-items text-bold head-row">Vòng tuyển dụng</td>
+                                    <td class="field-items text-bold head-row">Đánh giá</td>
+                                    <td class="field-items text-bold head-row">Ngày ứng tuyển</td>
+                                    <td class="field-items text-bold head-row">Trình độ đào tạo</td>
+                                    <td class="field-items text-bold head-row">Nơi đào tạo</td>
+                                    <td class="field-items text-bold head-row">Chuyên ngành</td>
+                                    <td class="field-items text-bold head-row">Nơi làm việc gần nhất</td>
+                                    <td class="field-items text-bold head-row">Nhân sự khai thác</td>
+                                    <td class="field-items text-bold head-row">Đơn vị sử dụng</td>
+                                    <td class="field-items text-bold head-row">Phù hợp với chân dung</td>
+                                    <td class="field-items text-bold head-row">Khu vực</td>
+                                    <td class="field-items text-bold head-row">Người giới thiệu</td>
+                                    <td class="field-items text-bold head-row">Thông tin tiếp nhận</td>
+                                    <td class="field-items text-bold head-row">Thuộc kho tiềm năng</td>
+                                    <td class="action-col"></td>
+                                </tr>
+                            </thead>
+                            <!-- table body -->
+                            <tbody class="table-body" id="data-candidate">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- body footer -->
+                    <div class="content-body-footer display-flex justify-content-space-between align-items-center">
+                        <div class="table-total">
+                            Tổng : <span class="text-bold" id="total"></span> bản ghi
+                        </div>
+                        <div class="table-pagination display-flex align-items-center">
+                            <span class="pagination-item">Số bản ghi/trang </span>
+                            <select class="input-default pagination-select" id="pagination-select">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                            <span class="pagination-item">1 - 25 bản ghi </span>
+                            <div class="icon icon-arrow-left "></div>
+                            <div class="icon icon-arrow-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal thêm ứng viên -->
+    <div id="Addcandidate" class="modal display-flex justify-content-center align-items-center">
+        <div class="modal-content display-flex flex-direction-column">
+            <!-- modal header -->
+            <div class="modal-header display-flex justify-content-space-between align-items-center">
+                <div class="text-bold modal-title">Thêm ứng viên</div>
+                <a href="#" class="close text-decoration-none" id="close">×</a>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body flex1 overflow-y-auto">
+                
+                <!-- modal infor -->
+                <div class="modal-infor display-flex">
+                    <!-- avatar -->
+                    <div class="modal-left display-flex justify-content-center align-items-center">
+                        <label for="uploadImage" class="upload-label">
+                            <span class="upload-text">Ảnh</span>
+                            <img class="preview-img" />
+                        </label>
+                        <input id="uploadImage" type="file" accept="image/*" hidden />
+                    </div>
+                    <div class="modal-right flex1">
+                        <!-- name -->
+                        <div class="modal-items">
+                            <label class="text-bold" for="fullname">
+                                Họ và tên
+                                <span class="text-red">*</span>
+                            </label>
+                            <input class="input-default modal-input" type="text" id="fullname" autofocus
+                                placeholder="Nhập họ và tên" />
+                        </div>
+
+                        <div class="modal-group-items display-flex justify-content-space-between">
+                            <!-- dob -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold" for="dob">
+                                    Ngày sinh
+                                </label>
+                                <input class="input-default modal-input" type="date" id="dob"
+                                    placeholder="dd//mm//yyyy" />
+                            </div>
+                            <!-- genre -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold" for="space">
+                                    Giới tính
+                                </label>
+                                <select class="input-default modal-input select-modal" id="genre">
+                                    <option value="" disabled selected hidden>
+                                        Chọn giới tính
+                                    </option>
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nu"> Nữ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- space -->
+                        <div class="modal-items">
+                            <label class="text-bold" for="space">
+                                Khu vực
+                            </label>
+                            <select class="input-default modal-input select-modal" id="space">
+                                <option value="" value="" disabled selected hidden>
+                                    Chọn khu vực
+                                </option>
+                                <option value="Bac">Bắc</option>
+                                <option value="Nam">Nam</option>
+                            </select>
+                        </div>
+                        <div class="modal-group display-flex justify-content-space-between">
+                            <!-- phone -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold" for="phone">
+                                    Số điện thoại
+                                </label>
+                                <input class="input-default modal-input" type="number" id="phone"
+                                    placeholder="Nhập số điện thoại" />
+                            </div>
+                            <!-- email -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold" for="email">
+                                    Email
+                                </label>
+                                <input class="input-default modal-input" type="email" id="email"
+                                    placeholder="Nhập Email" />
+                            </div>
+                        </div>
+                        <!-- address -->
+                        <div class="modal-items">
+                            <label class="text-bold" for="address">
+                                Địa chỉ
+                            </label>
+                            <input class="input-default modal-input" type="text" id="address"
+                                placeholder="Nhập địa chỉ" />
+                        </div>
+                        <!-- study -->
+                        <div>
+                            <div class="text-bold">Học vấn</div>
+                            <div class="study-items display-flex align-items-center justify-content-space-between">
+                                <label class="text-bold study-items-text">- Trình độ đào tạo</label>
+                                <select class="input-default modal-input select-modal study-input " id="education">
+                                    <option value="" disabled selected hidden> Nhập trình độ đào tạo</option>
+                                    <option value="Cu nhan">Cử nhân</option>
+                                </select>
+                            </div>
+                            <div class="study-items display-flex align-items-center justify-content-space-between">
+                                <label class="text-bold study-items-text">- Nơi đào tạo</label>
+                                <select class="input-default modal-input select-modal study-input " id="school">
+                                    <option value="" disabled selected hidden> Nhập nơi đào tạo</option>
+                                    <option value="dai hoc Ptit">đại học Ptit</option>
+                                </select>
+                            </div>
+                            <div class="study-items display-flex align-items-center justify-content-space-between">
+                                <label class="text-bold study-items-text">- Chuyên ngành</label>
+                                <select class="input-default modal-input select-modal study-input " id="major">
+                                    <option value="" disabled selected hidden> Nhập chuyên ngành</option>
+                                    <option value="IT">IT</option>
+                                </select>
+                            </div>
+                            <hr class="hr-css">
+                        </div>
+                            <a class="add-more-attribute text-decoration-none" href="#"> + Thêm học vấn</a>
+                        <!-- date apply -->
+                        <div class="modal-group-items display-flex justify-content-space-between">
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold">
+                                    Ngày ứng tuyển
+                                </label>
+                                <input class="input-default modal-input" readonly type="date" id="applicationDate"
+                                    placeholder="Nhập ngày ứng tuyển" />
+                            </div>
+                            <!-- src candidate -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold">
+                                    Nguồn ứng viên
+                                </label>
+                                <select class="input-default modal-input select-modal" id="source">
+                                    <option value="" disabled selected hidden>
+                                        Chọn nguồn ứng viên
+                                    </option>
+                                    <option value="Linkedln">Linkedln</option>
+                                    <option value="TopCV"> TopCV</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-group-items display-flex justify-content-space-between">
+                            <!-- hr -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold">
+                                    Nhân sự khai thác
+                                </label>
+                                <select class="input-default modal-input select-modal" id="humanresource">
+                                    <option selected value="Dinh nga" >Đinh Nga</option>
+                                </select>
+                                  
+                            </div>
+                            <!-- SEO -->
+                            <div class="modal-group-item flex1">
+                                <label class="text-bold">
+                                    Cộng tác viên
+                                </label>
+                                <select class="input-default modal-input select-modal" id="collaborator">
+                                    <option value="" disabled selected hidden>
+                                        Chọn cộng tác viên
+                                    </option>
+                                    <option value="nguyen van a">Nguyễn Văn A</option>
+                                    <option value="nguyen van b">Nguyễn Văn B</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="add-more-user-cbx">
+                            <input type="checkbox" />
+                            <label class="text-bold">Thêm nhanh người tham chiếu vào kho ứng viên</label>
+                        </div>
+                        <a class="add-more-attribute text-decoration-none" href="#"> + Thêm người giới thiệu</a>
+                        <!-- recent work address -->
+                        <div class="modal-items">
+                            <label class="text-bold">
+                                Nơi làm việc gần đây
+                            </label>
+                            <input class="input-default modal-input" type="text" id="recentworkplace"
+                                placeholder="Nhập nơi làm việc gần đây" />
+                        </div>
+                        
+                        <hr class="hr-css">
+
+                        <a class="add-more-attribute text-decoration-none" href="#"> + Thêm kinh nghiệm làm việc</a>
+                        <!-- work address -->
+                        <div class="modal-items">
+                            <label class="text-bold">
+                                Nơi làm việc
+                            </label>
+                            <input class="input-default modal-input" type="text" id="workplace"
+                                placeholder="Nhập nơi làm việc" />
+                        </div>
+                        <!-- job duration -->
+                        
+                        <div class="modal-group ">
+                            <label class="text-bold" for="phone">
+                            Thời gian
+                            </label>
+                            <div class="display-flex justify-content-space-between">
+                                <div class="modal-group-item flex1">
+                                    <input class="input-default modal-input" type="date" id="workStartDate"
+                                        placeholder="Nhập dd//mm//yyyy" />
+                                </div>
+                                <div class="modal-items display-flex align-items-center">
+                                    <span>-</span>
+                                </div>
+                                <div class="modal-group-item flex1">
+                                    <input class="input-default modal-input" type="date" id="workEndDate"
+                                        placeholder="Nhập dd//mm//yyyy" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- recent work position -->
+                        <div class="modal-items">
+                            <label class="text-bold" for="fullname">
+                                Vị trí công việc
+                            </label>
+                            <input class="input-default modal-input" type="text" id="jobPosition"
+                                placeholder="Nhập vị trí công việc" />
+                        </div>
+                        <!-- job description -->
+                        <div class="modal-items">
+                            <label class="text-bold" for="fullname">
+                                Mô tả công việc
+                            </label>
+                            <textarea class="input-default modal-input area-input" id="jobDescription"
+                                placeholder="Nhập mô tả công việc"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer display-flex align-items-center justify-content-end">
+                <a href="#" id="cancel" class="button modal-btn-cancel text-decoration-none display-flex align-items-center">
+                    Hủy
+                </a>
+                <!-- test -->
+                <button class="button modal-btn-save" id="save">
+                    Lưu
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="assets/js/main.js"></script>
+
+</html>

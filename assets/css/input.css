@@ -1,0 +1,103 @@
+
+.input-default{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+    outline: none;
+}
+.header .header-search{
+    width: 400px;
+    height: 32px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+.search-candidate{
+    width: 300px;
+    height: 32px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    padding: 3px 3px 3px 8px;
+}  
+.pagination-select{
+    background-color: white;
+    height: 32px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 50px;
+    margin-right: 8px;
+} 
+.modal-input{
+    border: 1px solid rgb(216, 216, 216);
+    margin: 5px 8px 5px 0px;
+    height: 35px;
+    border-radius: 6px;
+    padding-left:8px ;
+    padding-top: 2px;
+}
+.modal-input:hover{
+    border: 1px solid #2680eb;
+}
+.select-modal {
+  color: #999;
+  
+}
+.select-modal:not(:has(option[value=""]:checked)) {
+  color: #424242;
+}
+
+.study-input{
+    width: 250px;
+    margin-right: 0px;
+}
+.area-input{
+    height: 80px;
+    padding-top:8px ;
+}
+
+.upload-text {
+    cursor: pointer;
+    font-size: 14px;
+    color:gray;   
+    background: none;
+    border: none;
+    padding: 0;
+}
+.add-more-attribute{
+    color: #2680eb;
+    margin: 16px 0px 16px 0px;
+    display: block;
+}
+.add-more-user-cbx{
+    padding: 12px 0px 0px 0px;
+}
+.placeholder{
+    color: rgb(208, 208, 208);
+}
+.options {
+  display: none;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: white;
+  border-radius: 6px;
+  padding: 8px 8px 8px 8px;
+}
+.options.show {
+  display: block;
+}
+.selected{
+    color: #999;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+}
+.custom-select {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
